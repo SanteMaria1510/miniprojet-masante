@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/connexion.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- prendre le control de l'affichage selon la fenetre d'affichage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img class="img" src="images/images.jpg" alt=""> </a>
+        <marquee behavior="" direction="left">
+            <h1>Ma Santé</h1>
+        </marquee>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li><a href="client.html">Espace Patient</a> </li>
+                <li><a href="pharmacie.html">Pharmacie de garde la plus proche</a> </li>
+                <li><a href="medecin.html">Vous êtes medecin</a> </li>
+                <li><a href="corona.html">Informations Utiles corona</a> </li>
+                <li><a href="contact.html">Nous contacter</a> </li>
+
+            </ul>
+        </div>
+        <div class="col-6 col-s-9">
+            <!-- zone de connexion -->
+
+            <form class="logo" action="php/verification.php" method="POST">
+
+                <h1>Connexion</h1>
+
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <input type="submit" id='submit' value='LOGIN'>
+
+            </form>
+        </div>
+        <div class="col-3 col-s-12">
+            <div class="aside">
+
+                <h2>Notre Localisation</h2>
+                <iframe class="local"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493779.23063920555!2d-17.207423702302172!3d14.788720217012717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bf9aca37b4bf%3A0x5b086f4c73a3056b!2zVGhpw6hz!5e0!3m2!1sfr!2ssn!4v1643661056595!5m2!1sfr!2ssn"
+                    width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <h2>La Meteo du jour</h2>
+                <a target="_blank" href="https://hotelmix.fr/weather/thies-331386"><img width="150px" height="150px"
+                        src="https://w.bookcdn.com/weather/picture/3_331386_1_3_137AE9_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=581&anc_id=30199"
+                        alt="booked.net" /></a><!-- weather widget end -->
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Réalisé par Marema_Fall Copyright &copy; 2022|EMAAS.
+            </p>
+        </div>
+
+
+</body>
+
+</html>

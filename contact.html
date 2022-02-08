@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/contact.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+</head>
+
+<body>
+    <div  class="header">
+        <a href="index.html"><img class="img" src="images/images.jpg" alt=""> </a>  
+        <marquee behavior="" direction="left"><h1>Ma Santé</h1></marquee>
+      </div>
+    <div class="contactez-nous">
+      <b>  <h1>Contactez-nous</h1></b>
+        <p>Un problème de santé? une question? vous êtes satisfait ? 
+            N’hésitez pas à remplir ce formulaire pour prendre contact avec nous !</p>
+        <form action="php/traitement.php" method="post">
+           <div>
+               <label for="statut">Votre statut </label>
+               <select required name="statut" id="stat">
+                <option value="" disabled selected hidden>Choisissez de votre statut</option>
+                <option value="medecin">medecin</option>
+                <option value="patient">patient</option>
+
+               </select>
+           </div>
+            <div>
+                <label for="nom">Votre Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div>
+                <label for="prenom">Votre Prenom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" required>
+            </div>
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="probleme">Problème avec mon compte</option>
+                    <option value="question">Question à propos de votre santé?</option>
+                    <option value="suivi-dossier">Suivi de dossier?</option>
+                    <option value="Satisfaction">Satisfaction et encouragements</option>
+                    <option value="autre">Autre... Dites-nous comment nous pouvons vous aider</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
+                    required></textarea>
+            </div>
+            <div>
+                <button class="envoi" type="submit">Envoyer mon message</button>
+            </div>
+            <!-- fleche remontée -->
+            <div id="scroll_to_top">
+                <a href="#top"><img src="images/fleche.jpg" alt="Retourner en haut" /></a>
+            </div>
+        </form>
+   
+    <div class="footer">
+        <p>Réalisé par Marema_Fall Copyright © 2022|EMAAS. </p>
+        <!-- <ul class="et-social-icon">
+        <li class="et-social-icon et-social-pinterest">
+            <a href="https://www.pinterest.fr/" class="icon">
+            <span><?php esc_html_e( 'Pinterest', 'Divi' ); ?></span>
+            </a>
+            </li>
+        </ul> -->
+    </div>
+</div>
+</body>
+
+</html>
